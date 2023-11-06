@@ -82,29 +82,31 @@ main section:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-main section:nth-child(1) {
+.holiday-gift-cards-section {
     width: 100%;
     background-color: #f56600;
     text-align: center;
     margin-bottom: 1.75rem;
   }
   
-main section:nth-child(1) p {
+.holiday-gift-cards-section p {
+    margin: 0;
     padding: 0.5rem 0;
     font-size: 12px;
   }
 
-main section:nth-child(1) a{
+.holiday-gift-cards-section a{
     color: #FFE3B8;
     text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-main section:nth-child(1) a:hover {
+.holiday-gift-cards-section a:hover {
     transform: scale(1.1);
     color: #fff;
 }
   
-main section:nth-child(2) {
+.gift-guides-section {
     width: 100%;
     background-image: url(../images/bg-image.png);
     background-size: 1200px;
@@ -114,34 +116,43 @@ main section:nth-child(2) {
     margin-bottom: 1.75rem;
   }
   
-main section:nth-child(2) h1 {
+.gift-guides-heading {
     font-weight: bold;
-    font-size: 26px;
-    margin-bottom: 1.5rem;
+    font-size: 26px; 
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
   }
   
-main section:nth-child(2) p {
+  .gift-guides-heading:hover {
+    animation: fireworks 0.5s forwards;
+  }
+    
+.gift-guides-description {
     font-weight: bold;
+    font-size: small;
   }
   
-main section:nth-child(3) {
+.product-section {
     width: 100%;
     background-color: #ffffff;
     padding: 1% 0;
     margin-bottom: 1.75rem;
   }
 
-.main section .section-header a:hover {
+.section-header a:hover {
     color: #fff;
-    background-color: #f56600;
+    background-color: #04531a;
+    border-radius: 8px;
+    padding: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
   
-main section .section-header:nth-child(1) {
+.section-header:nth-child(1) {
     width: 100%;
     margin-bottom: 1%;
   }
   
-main section .section-header h3 {
+.section-header h3 {
     display: inline;
     color: #111;
     font-size: 18px;
@@ -149,7 +160,7 @@ main section .section-header h3 {
     margin: 0 1% 0 1.1rem;
   }
   
-main section .section-header p {
+.section-header p {
     display: inline;
     width: fit-content;
     color: #3390a8;
@@ -244,4 +255,17 @@ footer .logocontainer img {
     padding: 0.4rem 1.75rem;
 }
 
-  
+@keyframes fireworks {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }   
