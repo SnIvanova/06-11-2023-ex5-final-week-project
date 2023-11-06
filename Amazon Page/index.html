@@ -4,44 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <meta name="description" content="" />
+    <title>Amazon Gift Shop</title>
+    <meta name="description" content="Explore a wide range of holiday gift cards, gift guides, gaming gear, and audio accessories at Amazon Gift Shop." />
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 <body>
-    <header>
+    <header role="banner">
         <div class="logocontainer">
           <img src="./assets/images/logo.png" alt="Amazon logo" />
         </div>
-        <div class="navbar" id="nav">
+        <div class="navbar" id="nav" role="navigation">
           <ul>
-            <li><a href="/#">All</a></li>
-            <li><a href="/#">Today's deals</a></li>
-            <li><a href="/#">Customer Service</a></li>
-            <li><a href="/#">Registry</a></li>
-            <li><a href="/#">Gift Cards</a></li>
-            <li><a href="/#">Sell</a></li>
+            <li><a href="/#" role="menuitem">All</a></li>
+            <li><a href="/#" role="menuitem">Today's deals</a></li>
+            <li><a href="/#" role="menuitem">Customer Service</a></li>
+            <li><a href="/#" role="menuitem">Registry</a></li>
+            <li><a href="/#" role="menuitem">Gift Cards</a></li>
+            <li><a href="/#" role="menuitem">Sell</a></li>
           </ul>
         </div>
       </header>
-      <main></main>
-      <footer>
+
+      <main role="main">
+        <section>
+            <p>Shop All Holiday Gift Cards</p>
+          </section>
+          <section>
+            <h1>Holiday Gift Guides</h1>
+            <p>Be a go-gifter</p>
+          </section>
+          <section>
+            <div class="section-header">
+              <h3>Find the perfect gift</h3>
+              <a href="#" role="link"><p>Shop now</p></a>
+            </div>
+            <div class="imgboxes" role="group">
+              <a href="#" role="link"
+                ><img src="./assets/images/img_1.jpg" alt="Tablet"
+              /></a>
+              <a href="#" role="link"><img src="./assets/images/img_2.jpg" alt="open notebook on the table" /></a>
+              <a href="#" role="link"
+                ><img src="./assets/images/img_3.jpg" alt="Smartwatches on the table"
+              /></a>
+              <a href="#" role="link"><img src="./assets/images/img_4.jpg" alt="Cat and dog sitting next to each other" /></a>
+            </div>
+          </section>
+          <section>
+            <a href="#" role="link"><div class="imgbox"></div></a>
+            <div class="section-header">
+              <h3>Play the gifting game</h3>
+              <a href="#" role="link"><p>Shop gaming</p></a>
+            </div>
+          </section>
+          <section>
+            <a href="#" role="link"><div class="imgbox"></div></a>
+            <div class="section-header">
+              <h3>The sound of cheer</h3>
+              <a href="#" role="link"><p>Shop Audio & Accessories</p></a>
+            </div>
+          </section>
+      </main>
+      <footer role="contentinfo">
         <div class="footernav">
           <div class="space"></div>
-          <a href="#nav">Back to top</a>
+          <a href="#nav" role="link">Back to top</a>
           <div class="space"></div>
         </div>
         <div class="logocontainer">
           <div class="space"></div>
-          <a href="#"><img src="./assets/images/logo.png" alt="Amazon logo" /></a>
+          <a href="#" role="link"><img src="./assets/images/logo.png" alt="Amazon logo" /></a>
           <div class="space"></div>
         </div>
       </footer>
-
+      <script src="./assets/js/main.js"></script>
 </body>
 </html>
