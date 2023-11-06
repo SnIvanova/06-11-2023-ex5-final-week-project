@@ -20,6 +20,7 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 a:hover {
     color: #f56600;
@@ -28,10 +29,6 @@ a:hover {
 a:focus {
     outline: 2px solid #f56600;
     outline-offset: 2px;
-}
-
-a,.imgbox, .imgboxes img {
-    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 header .logocontainer {
@@ -78,27 +75,34 @@ main {
 main a:hover {
     background-color: f56600;
     color: #fff;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }    
 
 
 main section:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
 }
 
 main section:nth-child(1) {
     width: 100%;
     background-color: #f56600;
-    color: #FFE3B8;
     text-align: center;
     margin-bottom: 1.75rem;
   }
   
 main section:nth-child(1) p {
     padding: 0.5rem 0;
-    font-size: 13px;
+    font-size: 12px;
   }
+
+main section:nth-child(1) a{
+    color: #FFE3B8;
+    text-decoration: none;
+}
+
+main section:nth-child(1) a:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
   
 main section:nth-child(2) {
     width: 100%;
@@ -130,7 +134,6 @@ main section:nth-child(3) {
 .main section .section-header a:hover {
     color: #fff;
     background-color: #f56600;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
   
 main section .section-header:nth-child(1) {
@@ -150,19 +153,17 @@ main section .section-header p {
     display: inline;
     width: fit-content;
     color: #3390a8;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 800;
 }
   
 .main section .imgboxes img:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
 
   main section:nth-child(3) .imgboxes {
     width: 100%;
     text-align: center;
-    transition: all 0.3s ease;
 }
   
 main section:nth-child(3) .imgboxes img {
@@ -172,7 +173,6 @@ main section:nth-child(3) .imgboxes img {
     margin: 0 1%;
     border-radius: 1rem;
     box-shadow: 5px 8px 15px 2px rgba(0, 0, 0, 0.15) ;
-    transition: all 0.3s ease;
 }
 main section:nth-child(3).imgboxes:hover,
 main section:nth-child(3) .imgboxes img:hover {
@@ -180,11 +180,15 @@ main section:nth-child(3) .imgboxes img:hover {
     transition: transform 0.3s ease;
     box-shadow: 8px 12px 20px 3px rgba(0, 0, 0, 0.3);
 }
-  
+
+main section:nth-child(4) .imgbox,
+main section:nth-child(5) .imgbox {
+  background-size: cover;
+  height: 24rem;
+}
+
 main section:nth-child(4) .imgbox {
     background-image: url(../images/img_9.png);
-    background-size: cover;
-    height: 24rem;
 }
   
 main section:nth-child(4) .section-header, main section:nth-child(5) .section-header  {
@@ -194,8 +198,6 @@ main section:nth-child(4) .section-header, main section:nth-child(5) .section-he
   
 main section:nth-child(5) .imgbox {
     background-image: url(../images/img_10.png);
-    background-size: cover;
-    height: 24rem;
 }
   
 footer {
@@ -224,6 +226,7 @@ footer .logocontainer {
     background-color: #222f3f;
 }
 .footer .logocontainer a:hover img {
+    transform : scale(1.1);
     transition: transform 0.3s ease;
 }
   
