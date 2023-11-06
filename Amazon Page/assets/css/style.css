@@ -168,16 +168,17 @@ main section:hover {
     font-weight: 800;
 }
   
-.main section .imgboxes img:hover {
+.imgboxes img:hover {
     transform: scale(1.05);
+    box-shadow: 8px 12px 20px 3px rgba(0, 0, 0, 0.3);
 }
 
-  main section:nth-child(3) .imgboxes {
+.imgboxes {
     width: 100%;
     text-align: center;
 }
   
-main section:nth-child(3) .imgboxes img {
+.imgboxes img {
     width: 22.5%;
     height: 22rem;
     object-fit: cover;
@@ -185,17 +186,17 @@ main section:nth-child(3) .imgboxes img {
     border-radius: 1rem;
     box-shadow: 5px 8px 15px 2px rgba(0, 0, 0, 0.15) ;
 }
-main section:nth-child(3).imgboxes:hover,
-main section:nth-child(3) .imgboxes img:hover {
+.imgboxes:hover,
+.imgboxes img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     box-shadow: 8px 12px 20px 3px rgba(0, 0, 0, 0.3);
 }
 
-main section:nth-child(4) .imgbox,
-main section:nth-child(5) .imgbox {
+.product-section1 .imgbox{
   background-size: cover;
   height: 24rem;
+  transition: transform 0.3s ease;
 }
 
 main section:nth-child(4) .imgbox {
